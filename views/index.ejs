@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Facts</title>
+  <link rel="stylesheet" href="/styles/style.css"> <!-- Correct path to style.css -->
+</head>
+<body>
+  <div class="container">
+    <h1>Cat Facts</h1>
+    <p id="fact"><%= fact %></p>
+    <button id="newFactBtn">Get a New Fact</button>
+  </div>
+
+  <script>
+    // AJAX request to fetch a new cat fact
+    document.getElementById('newFactBtn').addEventListener('click', async function() {
+      try {
+        const response = await fetch('/new-fact');
+        const data = await response.json();
+        document.getElementById('fact').innerText = data.fact;
+      } catch (error) {
+        console.error('Error fetching a new fact:', error);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark text for good contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the content */
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Heading Style */
+  h1 {
+    color: #007bff; /* Blue color for the heading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Fact Text Style */
+  #fact {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text color */
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect for Button */
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Add spacing between the button and the fact */
+  button {
+    margin-top: 20px;
+  }
+  
